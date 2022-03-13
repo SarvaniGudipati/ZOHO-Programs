@@ -1,164 +1,17 @@
-# ZOHO-Programs
+# ZOHO-Program
 
-# Question 1 Code
+In this project,
+I created folder ball_bricks which contains Ball and Brick project.
+Each question is an individual c program namely Q1.c to Q5.c
 
-#include <stdio.h>
+Q1.c contains code for taking matrix size and positions then printing game matrix.
 
-int main()
-{
-    int n=7,i,j;
-    scanf("%d",&n);
-    for(i=0;i<n;i++)
-    {
-        for(j=0;j<n;j++)
-        {
-            if(i==0 || j==0 || j==n-1)
-                printf(" W");
-            else if(i==n-1 && (j==1 ||j==2 || j==4 || j==5))
-                printf(" G");
-            else if(i==n-1 && j==3)
-                printf(" o");
-            else if((i==2 && (j==2 || j==3 || j==4)) || (i==3 && (j==2 || j==3 || j==4)))
-                printf(" 1");
-            else 
-                printf("  ");
-        }
-        printf("\n");
-    }
-    printf("Ball count is 3");
+Q2.c contains code of Q1 along with code for traversing input and output.
 
+Q3.c contains code for breaking down of numerical bricks when the balls hits. 
 
-    return 0;
-}
+Q4.c contains code for types of demolishing bricks and
 
-# Question 2 Code:
+Q5.c contains code for ball count based on the position of the ball.
 
-#include <stdio.h>
-
-int main()
-{
-    int n=7,i,j;
-    scanf("%d",&n);
-    for(i=0;i<n;i++)
-    {
-        for(j=0;j<n;j++)
-        {
-            if(i==0 || j==0 || j==n-1)
-                printf(" W");
-            else if(i==n-1 && (j==1 ||j==2 || j==4 || j==5))
-                printf(" G");
-            else if(i==n-1 && j==3)
-                printf(" o");
-            else if((i==2 && (j==2 || j==3 || j==4)) || (i==3 && (j==2 || j==4)))
-                printf(" 1");
-            else
-                printf("  ");
-        }
-        printf("\n");
-    }
-    printf("Ball count is 3");
-
-
-    return 0;
-}
-
-# Question 3 Code:
-
-#include <stdio.h>
-
-int main()
-{
-    int n=7,i,j;
-    scanf("%d",&n);
-    for(i=0;i<n;i++)
-    {
-        for(j=0;j<n;j++)
-        {
-            if(i==0 || j==0 || j==n-1)
-                printf(" W");
-            else if(i==n-1 && (j==1 ||j==2 || j==4 || j==5))
-                printf(" G");
-            else if(i==n-1 && j==3)
-                printf(" o");
-            else if((i==2 && j==3) || (i==3 && (j==2 || j==3 || j==4)))
-                printf(" 1");
-            else if((i==2 && j==4))
-                printf(" 3");
-            else 
-                printf("  ");
-        }
-        printf("\n");
-    }
-    printf("Ball count is 3");
-
-
-    return 0;
-}
-
-# Question 4 Code:
-
-#include <stdio.h>
-
-int main()
-{
-    int n=7,i,j;
-    scanf("%d",&n);
-    for(i=0;i<n;i++)
-    {
-        for(j=0;j<n;j++)
-        {
-            if(i==0 || j==0 || j==n-1)
-                printf("  W");
-            else if(i==n-1 && (j==1 ||j==2 || j==4 || j==5))
-                printf("  G");
-            else if(i==n-1 && j==3)
-                printf("  o");
-            else if((i==1 && (j==2 || j==4)))
-                printf("  1");
-            else if((i==1 && j==3))
-                printf(" DE");
-            else 
-                printf("   ");
-        }
-        printf(" \n");
-    }
-    printf("Ball count is 3");
-
-
-    return 0;
-}
-
-# Question 5 Code:
-
-#include <stdio.h>
-
-int main()
-{
-    int n=7,i,j;
-    scanf("%d",&n);
-    for(i=0;i<n;i++)
-    {
-        for(j=0;j<n;j++)
-        {
-            if(i==0 || j==0 || j==n-1)
-                printf(" W");
-            else if(i==n-1 && (j==1 ||j==2 || j==5))
-                printf(" G");
-            else if(i==n-1 && j==4)
-                printf(" _");
-            else if(i==n-1 && j==3)
-                printf(" o");
-            else if((i==2 && (j==2 || j==3 || j==4)) || (i==3 && (j==2 || j==4)))
-                printf(" 1");
-            //else if((i==3 && j==3))
-              //  printf(" B");
-            else 
-                printf("  ");
-        }
-        printf("\n");
-    }
-    printf("Ball count is 3");
-
-
-    return 0;
-}
+After executing each program you will be given instructions to give input as given in the documents in mail.
